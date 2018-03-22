@@ -98,7 +98,7 @@ analytics:
 # Site Author
 author:
   name             : "Yogesh Jadhav"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : # path of avatar image, e.g. "/images/yogesh.jpg"
   bio              : ""
   location         : "Bangalore, India"
   email            : yogeshjadhav96@gmail.com
