@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Greenplum Parallel Restore Using Python"
 date:   2018-03-20 10:10:00 +0800
 categories: Greenplum Python
