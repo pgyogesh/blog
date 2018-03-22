@@ -166,9 +166,6 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
-gem "github-pages", group: :jekyll_plugins			
-
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
@@ -204,6 +201,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
+  - github-pages
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
