@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Greenplum Database Query Performance Checklist"
 date:   2018-01-10 01:30:13 +0800
 categories: Greenplum

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Useful SQL scripts for Greenplum DBA"
 date:   2017-12-06 01:30:13 +0800
 categories: Greenplum
@@ -142,7 +142,7 @@ LIMIT 50;
 ### SQL statement to get the workfiles per query
 
 ```sql
-SELECT 
+SELECT
 	g.datname "Database",
 	g.procpid "Process",
 	g.sess_id "Session",

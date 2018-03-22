@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Script:Getting email alert for long running queries"
 date:   2018-02-09 10:10:10 +0800
 categories: Postgresql Greenplum
@@ -13,16 +13,16 @@ Hello... I have written a script to get long running queries in postgresql and g
 
   - Change ENVIRONMENT to match with environment running script. This environment will be added in your email subject and sender name
       Example:
-        
+
         If you set ENVIRONMENT = yjdev then your subject and sender will be like below.
-        
+
         Subject = Long running queries in yjdev
-        
+
         Sender = YJDEV-gpadmin@yourdomain.com
   - Change MAX_TIME for query duration (In minutes). This is string type. So, Always have this in qoutes
   - Change SENDER to match with your domain name
   - Change RECIEVERS to add multiple receivers with quoma separator. (Ex: RECEIVERS = 'yogesh.jadhav@yourdomain.com;DBA-Greenplum@yourdomain.com')
-  
+
 ### long_running_queries.py
 
 ```python

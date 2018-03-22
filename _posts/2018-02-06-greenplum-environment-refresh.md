@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Script: Greenplum environment refresh"
 date:   2018-02-06 10:10:10 +0800
 categories: Greenplum
@@ -26,4 +26,3 @@ You can fork these from my [github site](https://github.com/pgyogesh/greenplum-e
 <script src="https://gist.github.com/pgyogesh/d581b75bb3ec53e5881dddb785d86ec1.js"></script>
 
 Let me know if you have issues or suggestion for this script [here](https://github.com/pgyogesh/greenplum-environment-refresh/issues/new){:target="_blank"} or comment below in comment box.
-

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Greenplum Parallel Restore Using Python"
 date:   2018-03-20 10:10:00 +0800
 categories: Greenplum Python
@@ -7,7 +7,7 @@ read: 15 Mins
 tags: greenplum python postgresql backup restore
 ---
 
-I have written a python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all required steps mentioned in [this pivotal documentation](https://gpdb.docs.pivotal.io/510/admin_guide/managing/restore-diff-system.html) 
+I have written a python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all required steps mentioned in [this pivotal documentation](https://gpdb.docs.pivotal.io/510/admin_guide/managing/restore-diff-system.html)
 
 ### Problem:
 
@@ -18,7 +18,7 @@ I have written a python program to parallel restore greenplum backup in dissimil
       - Thoughput
           - Backup size: 29TB
           - Restore time: ~84 Hours
-          
+
 ### Solution:
 
   - Taking parallel backup using gpcrondump
@@ -26,20 +26,20 @@ I have written a python program to parallel restore greenplum backup in dissimil
       - 1.8 TB / Hour
       - Backup Size: 29 TB
       - Restore time: ~16 Hours
-     
-     
+
+
 ### Requirement:
- 
+
    - We should have all the uncompressed backup files in single directory. (Data Domain is best option for this)
-   
-   
+
+
 ### Testing:
- 
+
  For testing this script, I created a sample function. This function takes two arguments. One is string and another is integer. As you might have understood this function internally runs `pg_sleep` function on second(integer) argument.
- 
- 
+
+
 #### Funtion:
- 
+
  ```sql
  CREATE FUNCTION test_pg_sleep(TEXT, INTEGER) RETURNS VOID AS $$
 DECLARE
@@ -137,7 +137,7 @@ Options:
 ```
 
 ### `-d, --database`
-This option is to specify the target database. If target database doesn't exist in the environment, Script exits immediately. 
+This option is to specify the target database. If target database doesn't exist in the environment, Script exits immediately.
 
 ### `--host`
 This option is to specify the target host. The default value is `localhost`
@@ -183,4 +183,3 @@ This is standard log file for post data backup file
 
 #### Note:
 I'm not sharing this script here and I have my reasons for it. I'll try to share it here ASAP.
-

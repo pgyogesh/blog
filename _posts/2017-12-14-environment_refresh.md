@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "How do we do Greenplum Database environment refresh"
 date:   2017-12-14 01:30:13 +0800
 categories: Greenplum

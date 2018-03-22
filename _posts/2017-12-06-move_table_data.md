@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Moving table data from one table to another"
 date:   2017-12-06 01:30:13 +0800
 categories: SQL

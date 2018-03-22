@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Making MarkLogic cluster highly available"
 date:   2017-11-04 01:30:13 +0800
 categories: MarkLogic

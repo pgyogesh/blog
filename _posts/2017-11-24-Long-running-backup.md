@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "How to check on which segment backup was running longer (ddboost)"
 date:   2017-11-24 01:30:13 +0800
 categories: Greenplum

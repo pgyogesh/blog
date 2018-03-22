@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Log analyzer using Python Programming Langauge"
 date:   2018-01-19 23:10:10 +0800
 categories: Python
@@ -20,7 +20,7 @@ Here is demo:
 Note: Actually, Script will give result like below but I'm not sure why it resulted in asciinema recorder. So dont worry :smile:
 
 ```bash
-$ python log_analyzer.py -f sample.log 
+$ python log_analyzer.py -f sample.log
 00 : * 1
 09 : *** 3
 10 : * 1

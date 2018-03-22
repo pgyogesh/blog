@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "My first GitHub repository for Greenplum DBA"
 date:   2017-04-20 01:30:13 +0800
 categories: GitHub

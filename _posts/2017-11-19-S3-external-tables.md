@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Guide to create external table in greenplum using Amazon S3 Buckets"
 date:   2017-11-19 01:30:13 +0800
 categories: Greenplum

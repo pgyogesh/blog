@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Using pygresql python module with Greenplum"
 date:   2018-01-18 01:30:13 +0800
 categories: Python
@@ -24,7 +24,7 @@ from pygresql.pg import DB
 con = DB(dbname='gpadmin', host='localhost', port=5432, user='gpadmin', passwd='changeme')
 ```
 
-##### Running Queries 
+##### Running Queries
 
 ```python
 >>>a = con.query("select * from gp_segment_configuration where hostname=mdw")

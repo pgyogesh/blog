@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Log Analyzer for MarkLogic Database Server"
 date:   2018-01-23 10:10:10 +0800
 categories: Marklogic
@@ -7,7 +7,7 @@ tags: marklogic python programming scripts
 read: 5 minutes read
 ---
 
-As a DBA, It is very frequent that we have to check the log file for errors, warning and etc. So, I have created one Python script to analyze the MarkLogic logs. 
+As a DBA, It is very frequent that we have to check the log file for errors, warning and etc. So, I have created one Python script to analyze the MarkLogic logs.
 
 This is displays the graphs for errors and warning or custom search like you will see it in below demo. It also trims the log from perticular time to perticular time.
 

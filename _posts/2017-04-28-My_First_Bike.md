@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "...And finally I got my first bike"
 date:   2017-04-28 01:30:13 +0800
 categories: Life
