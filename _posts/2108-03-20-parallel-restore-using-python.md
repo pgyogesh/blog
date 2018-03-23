@@ -111,9 +111,9 @@ $ while True
 ```
 
 ## Demo
-Below is live recording of these two sessions.
+Below is live recording of above two sessions. You may want to click on fullscreen for better view.
 
-<iframe src="//slides.com/yogeshjadhavyj/deck/embed?style=light" width="576" height="420" scrolling="yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//slides.com/yogeshjadhavyj/deck/embed?style=light" scrolling="yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
