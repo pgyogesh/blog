@@ -10,5 +10,11 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Home"
+  - title: "HOME"
     url: http://pgyogesh.com
+  - title: "TAGS"
+    url: /tags/  
+  - title: "CATEGORIES"
+    url: /categories/
+  - title: "ARCHIVE"
+    url: /year-archive/   
