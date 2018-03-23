@@ -102,7 +102,7 @@ author:
   avatar           : "/images/yogesh.jpg" # path of avatar image, e.g. "/images/yogesh.jpg"
   bio              : "Big Data Engineer, Python Programmer"
   location         : "Bangalore, India"
-  email            : yogeshjadhav96@gmail.com
+  email            : 
   uri              :
   home             : http://pgyogesh.com # null (default), "absolute or relative url to link to author home"
   bitbucket        :
