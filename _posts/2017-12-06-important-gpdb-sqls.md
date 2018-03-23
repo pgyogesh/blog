@@ -81,9 +81,9 @@ FROM pg_roles, gp_toolkit.gp_resqueue_status
 WHERE pg_roles.rolresqueue=gp_toolkit.gp_resqueue_status.queueid
 order by rolname;
 ```
-+ ## Object Size and Workfiles
++ ### Object Size and Workfiles
 
-   - ### SQL statement to get uncompressed size of table
+   - #### SQL statement to get uncompressed size of table
 
 ```sql
 SELECT
@@ -91,7 +91,7 @@ SELECT
 FROM gp_toolkit.gp_size_of_table_uncompressed where sotuschemaname = 'schema_name'  and sotutablename ='table_name';
 ```
 
-   - ### SQL statement to get uncompressed size of schema
+   - #### SQL statement to get uncompressed size of schema
 
 ```sql
 SELECT pg_size_pretty(SUM(sotusize)::BIGINT)
