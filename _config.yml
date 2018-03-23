@@ -58,9 +58,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  
-search                   : true, #false (default)
-search_full_content      : true, #false (default)
+
+search                   : true #false (default)
+search_full_content      : true #false (default)
 search_provider          : algolia # lunr (default), algolia
 algolia:
   application_id         : TX8IF0W7CI # YOUR_APPLICATION_ID
@@ -102,7 +102,7 @@ author:
   avatar           : "/images/yogesh.jpg" # path of avatar image, e.g. "/images/yogesh.jpg"
   bio              : "Big Data Engineer, Python Programmer"
   location         : "Bangalore, India"
-  email            : 
+  email            :
   uri              :
   home             : http://pgyogesh.com # null (default), "absolute or relative url to link to author home"
   bitbucket        :

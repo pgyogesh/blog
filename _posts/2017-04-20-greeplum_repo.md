@@ -1,5 +1,9 @@
 ---
 layout: single
+excerpt: "This is my first GitHub Repo created fro Greenplum DBA's"
+header:
+  overlay_image: /images/unsplash-03.jpg
+  overlay_filter: 0.5
 title:  "My first GitHub repository for Greenplum DBA"
 date:   2017-04-20 01:30:13 +0800
 categories: GitHub

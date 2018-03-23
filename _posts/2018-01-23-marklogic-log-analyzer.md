@@ -1,5 +1,9 @@
 ---
 layout: single
+excerpt: "Python script to analyze MarkLogic Database Server Logs. It shows bar graph per hour."
+header:
+  overlay_image: /images/unsplash-03.jpg
+  overlay_filter: 0.5
 title:  "Log Analyzer for MarkLogic Database Server"
 date:   2018-01-23 10:10:10 +0800
 categories: Marklogic
