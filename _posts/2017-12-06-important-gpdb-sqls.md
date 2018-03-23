@@ -10,7 +10,7 @@ Here I'm sharing my collection of SQL Script for Greenplum DBA. And of course fe
 
 ## User, roles and resource queue
 
-### Getting the list of member of a role
+### List of member of a role
 
 ```sql
 SELECT a.rolname
@@ -18,7 +18,7 @@ FROM pg_roles a
 WHERE pg_has_role(a.oid,'your_rolname', 'member');
 ```
 
-### Getting list of roles and its members
+### List of roles and its members
 
 ```sql
 SELECT r.rolname,
@@ -39,7 +39,7 @@ SELECT *
 	where rrrolname = 'rolename';
 ```
 
-### Find running queries or statements which are waiting in Resource Queues
+### Running queries or statements which are waiting in Resource Queues
 
 ```sql
 SELECT
@@ -58,7 +58,7 @@ WHERE pg_roles.rolresqueue=pg_locks.objid
 ```
 
 
-### Getting list of users associated with Resource Queue
+### List of users associated with Resource Queue
 
 ```sql
 SELECT rolname as RoleName
@@ -82,7 +82,7 @@ order by rolname;
 
 ## Object Size and Workfiles
 
-### SQL statement to get uncompressed size of table
+### Uncompressed size of table
 
 ```sql
 SELECT
@@ -90,7 +90,7 @@ SELECT
 FROM gp_toolkit.gp_size_of_table_uncompressed where sotuschemaname = 'schema_name'  and sotutablename ='table_name';
 ```
 
-### SQL statement to get uncompressed size of schema
+### Uncompressed size of schema
 
 ```sql
 SELECT pg_size_pretty(SUM(sotusize)::BIGINT)
@@ -98,7 +98,7 @@ FROM gp_toolkit.gp_size_of_table_uncompressed
 WHERE sotuschemaname = '<schema_name>';
 ```
 
-### SQL statement to get uncompressed size of current database
+### Uncompressed size of current database
 
 ```sql
 SELECT
@@ -106,7 +106,7 @@ SELECT
 FROM gp_toolkit.gp_size_of_table_uncompressed;
 ```
 
-### SQL statement to get top big tables in schema with owner name
+### Top big tables in schema with owner name
 
 ```sql
 SELECT
@@ -121,7 +121,7 @@ ORDER BY sotusize DESC
 LIMIT 50;
 ```
 
-### SQL statement to get the workfiles per query
+### Workfiles per query
 
 ```sql
 SELECT
@@ -138,7 +138,7 @@ GROUP BY 1,2,3,4,p.current_query
 ORDER BY 4 DESC;
 ```
 
-### SQL statement to get work files details on each segment
+### Work files details on each segment
 
 ```sql
 SELECT
