@@ -9,28 +9,6 @@ tags: postgresql greenplum SQL scripts
 
 Here I'm sharing my collection of SQL Script for Greenplum DBA. And of course few of them are copied from somewhere on Internet :wink:
 
-	- [List of member of a role](#getting-the-list-of-member-of-a-role)
-	- [List of roles and its members](#getting-list-of-roles-and-its-members)
-	- [Resource Queue of user](#resource-queue-of-user)
-	- [Queries or statements which are Waiting in Resource Queues](#find-running-queries-or-statements-which-are-waiting-in-resource-queues)
-	- [List of users associated with Resource Queue](#getting-list-of-users-associated-with-resource-queue)
-
-+ ### Object Size and Workfiles
-	- [Uncompressed size of table](#sql-statement-to-get-uncompressed-size-of-table)
-	- [Uncompressed size of schema](#sql-statement-to-get-uncompressed-size-of-schema)
-	- [Uncompressed size of database](#sql-statement-to-get-uncompressed-size-of-current-database)
-	- [Top big tables in schema with owner name](#sql-statement-to-get-top-big-tables-in-schema-with-owner-name)
-	- [Workfiles per query](#sql-statement-to-get-the-workfiles-per-query)
-	- [Workfiles details on each segment](#sql-statement-to-get-work-files-details-on-each-segment)
-
-
-+ ### Database Activities and Locks
-   - [Database Activities](#database-activities)
-   - [Waiter's information](#waiters-information)
-   - [Blocker's information](#blockers-information)
-   - [Waiter's and Blocker's Information](#waiters-and-blockers-information)
-
-
 + ### User, roles and resource queue
 
    - #### Getting the list of member of a role
