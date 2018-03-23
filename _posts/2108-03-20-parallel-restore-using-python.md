@@ -148,7 +148,7 @@ Below is live recording of above two sessions. You may want to click on fullscre
 
 </script>
 
-<iframe src="//slides.com/yogeshjadhavyj/deck/embed?style=light" scrolling="yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//slides.com/yogeshjadhavyj/deck/embed?style=light" class="iframe" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
