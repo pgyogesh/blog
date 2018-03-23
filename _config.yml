@@ -201,6 +201,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-archives
   - github-pages
   - jekyll-paginate
   - jekyll-sitemap
@@ -238,13 +239,20 @@ jekyll-archives:
    enabled:
      - categories
      - tags
-   layouts:
-     category: archive-taxonomy
-     tag: archive-taxonomy
-   permalinks:
-     category: /categories/:name/
-     tag: /tags/:name/
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
+   layout: 'archive'
+   permalinks:
+     year: '/:year/'
+     month: '/:year/:month/'
+     day: '/:year/:month/:day/'
+     tag: '/tag/:name/'
+     category: '/category/:name/'
 
 # HTML Compression
 # - http://jch.penibelst.de/
