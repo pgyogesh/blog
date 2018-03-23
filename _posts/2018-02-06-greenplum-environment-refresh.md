@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Python script to refresh data between two environments and switch the roles"
 header:
   overlay_image: /images/unsplash-image-04.jpg

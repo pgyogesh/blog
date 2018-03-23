@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Python script to analyze MarkLogic Database Server Logs. It shows bar graph per hour."
 header:
   overlay_image: /images/unsplash-03.jpg

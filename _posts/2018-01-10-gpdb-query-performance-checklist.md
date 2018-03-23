@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Lists basic troubleshooting of performance issues in Greenplum"
 header:
   overlay_image: /images/unsplash-07.jpg

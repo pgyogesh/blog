@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Give a basic idea creating highly available MarkLogic cluster"
 header:
   overlay_image: /images/unsplash-01.jpg

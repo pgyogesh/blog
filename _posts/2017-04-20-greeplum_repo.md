@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "This is my first GitHub Repo created fro Greenplum DBA's"
 header:
   overlay_image: /images/unsplash-03.jpg

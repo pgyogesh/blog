@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Python program send email notification if query is running for longer time."
 header:
   overlay_image: /images/unsplash-12.jpg

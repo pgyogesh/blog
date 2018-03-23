@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Give a basic idea using S3 bucket as external table in Greenplum Database"
 header:
   overlay_image: /images/unsplash-12.jpg

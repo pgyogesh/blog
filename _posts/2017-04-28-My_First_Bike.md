@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Just sharing my experience of getting my first bike"
 header:
   overlay_image: /images/unsplash-05.jpg

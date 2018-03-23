@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "A simple trick to move table data from one table to other table"
 header:
   overlay_image: /images/unsplash-09.jpg

@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Python program to switch the roles between the environments"
 header:
   overlay_image: /images/unsplash-08.jpg

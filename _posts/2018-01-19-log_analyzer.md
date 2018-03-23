@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "Give a basic idea for creating a log analyzer using Python Programming"
 header:
   overlay_image: /images/unsplash-05.jpg

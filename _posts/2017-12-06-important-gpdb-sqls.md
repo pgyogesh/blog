@@ -1,5 +1,6 @@
 ---
 layout: single
+comments: true
 excerpt: "List of SQL statements which can be used by Database Administrators in day to day life"
 header:
   overlay_image: /images/unsplash-11.jpg
