@@ -1,7 +1,7 @@
 ---
 layout: single
 
-excerpt: "python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all recommended steps by Pivotal"
+excerpt: "python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all recommended steps by Pivotal."
 header:
   overlay_image: /images/unsplash-image-1.jpg
   overlay_filter: 0.5
