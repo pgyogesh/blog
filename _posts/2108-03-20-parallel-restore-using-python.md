@@ -113,6 +113,29 @@ $ while True
 ## Demo
 Below is live recording of above two sessions. You may want to click on fullscreen for better view.
 
+<script type="application/javascript">
+
+function resizeIFrameToFitContent( iFrame ) {
+
+    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+}
+
+window.addEventListener('DOMContentLoaded', function(e) {
+
+    var iFrame = document.getElementById( 'iFrame1' );
+    resizeIFrameToFitContent( iFrame );
+
+    // or, to resize all iframes:
+    var iframes = document.querySelectorAll("iframe");
+    for( var i = 0; i < iframes.length; i++) {
+        resizeIFrameToFitContent( iframes[i] );
+    }
+} );
+
+</script>
+
+
 <iframe src="//slides.com/yogeshjadhavyj/deck/embed?style=light" scrolling="yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
