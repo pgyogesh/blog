@@ -272,7 +272,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: splash
+      header:
+        image: /images/unsplash-12.jpg
       author_profile: true
       read_time: true
       comments: true
