@@ -98,12 +98,12 @@ analytics:
 # Site Author
 author:
   name             : "Yogesh Jadhav"
-  avatar           : # path of avatar image, e.g. "/images/yogesh.jpg"
-  bio              : ""
+  avatar           : "/images/yogesh.jpg" # path of avatar image, e.g. "/images/yogesh.jpg"
+  bio              : "Big Data Engineer, Python Programmer"
   location         : "Bangalore, India"
   email            : yogeshjadhav96@gmail.com
   uri              :
-  home             : pgyogesh.com # null (default), "absolute or relative url to link to author home"
+  home             : http://pgyogesh.com # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -234,16 +234,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
 
 
 # HTML Compression
