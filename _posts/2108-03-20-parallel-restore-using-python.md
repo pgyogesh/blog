@@ -28,17 +28,17 @@ I have written a python program to parallel restore greenplum backup in dissimil
       - Restore time: ~16 Hours
 
 
-## Requirement:
+## Point to note
 
    - We should have all the uncompressed backup files in single directory. (Data Domain is best option for this)
 
 
-## Testing:
+## Testing
 
  For testing this script, I created a sample function. This function takes two arguments. One is string and another is integer. As you might have understood this function internally runs `pg_sleep` function on second(integer) argument.
 
 
-### Funtion:
+### Funtion
 
  ```sql
  CREATE FUNCTION test_pg_sleep(TEXT, INTEGER) RETURNS VOID AS $$
@@ -51,7 +51,7 @@ END;
 $$ LANGUAGE 'plpgsql' STRICT;
 ```
 
-### Backup files:
+### Backup files
 
 Below are the backup files which contains statements for above function statements. I have given various values in function to sleep.
 ```bash
