@@ -278,3 +278,4 @@ defaults:
       share: true
       related: true
       classes: wide
+      toc: true
