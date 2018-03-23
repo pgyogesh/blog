@@ -113,28 +113,40 @@ $ while True
 ## Demo
 Below is live recording of above two sessions. You may want to click on fullscreen for better view.
 
-<script type="application/javascript">
-
-function resizeIFrameToFitContent( iFrame ) {
-
-    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-}
-
-window.addEventListener('DOMContentLoaded', function(e) {
-
-    var iFrame = document.getElementById( 'iFrame1' );
-    resizeIFrameToFitContent( iFrame );
-
-    // or, to resize all iframes:
-    var iframes = document.querySelectorAll("iframe");
-    for( var i = 0; i < iframes.length; i++) {
-        resizeIFrameToFitContent( iframes[i] );
-    }
-} );
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript'>
+    
+    $(function(){
+    
+        var iFrames = $('iframe');
+      
+    	function iResize() {
+    	
+    		for (var i = 0, j = iFrames.length; i < j; i++) {
+    		  iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
+    	    }
+    	    
+        	if ($.browser.safari || $.browser.opera) { 
+        	
+        	   iFrames.load(function(){
+        	       setTimeout(iResize, 0);
+               });
+            
+        	   for (var i = 0, j = iFrames.length; i < j; i++) {
+        			var iSource = iFrames[i].src;
+        			iFrames[i].src = '';
+        			iFrames[i].src = iSource;
+               }
+               
+        	} else {
+        	   iFrames.load(function() { 
+        	       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+        	   });
+        	}
+        
+        });
 
 </script>
-
 
 <iframe src="//slides.com/yogeshjadhavyj/deck/embed?style=light" scrolling="yes" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
