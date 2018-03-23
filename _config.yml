@@ -20,10 +20,10 @@ title                    : "Yogesh Jadhav's Blog"
 title_separator          : "-"
 name                     : "Yogesh Jadhav"
 description              : "I write here about my projects and things I learn in day to day life"
-url                      : http://pgyogesh.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : http://pgyogesh.com/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : /blog # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /images/unsplash-image-1.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # /images/unsplash-image-1.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 50
 comments:
@@ -38,21 +38,21 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "/_data/comments/{options.slug}" (default)
+  requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : # "md5"
+    email                : "md5"
   generatedFields:
     date:
-      type               : # "date"
+      type               : "date"
       options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
   siteKey                :
   secret                 :
@@ -104,7 +104,7 @@ author:
   location         : "Bangalore, India"
   email            :
   uri              :
-  home             : http://pgyogesh.com # null (default), "absolute or relative url to link to author home"
+  home             : http://pgyogesh.com/GUI # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
