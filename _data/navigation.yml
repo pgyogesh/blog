@@ -17,4 +17,8 @@ main:
   - title: "CATEGORIES"
     url: /categories/
   - title: "ARCHIVE"
-    url: /year-archive/   
+    url: /year-archive/
+  - title: "PHOTOGRAPHY"
+    url: http://pgyogesh.com/photography
+  - title: "RESUME"
+    url: http://pgyogesh.com/online-cv
