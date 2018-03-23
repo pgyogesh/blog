@@ -3,7 +3,7 @@ layout: single
 excerpt: "Python program to switch the roles between the environments"
 header:
   overlay_image: /images/unsplash-08.jpg
-  overlay_filter: 0.5
+  overlay_filter: 0.3
 title:  "How do we do Greenplum Database environment refresh"
 date:   2017-12-14 01:30:13 +0800
 categories: Greenplum

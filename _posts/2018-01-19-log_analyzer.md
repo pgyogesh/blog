@@ -3,7 +3,7 @@ layout: single
 excerpt: "Give a basic idea for creating a log analyzer using Python Programming"
 header:
   overlay_image: /images/unsplash-05.jpg
-  overlay_filter: 0.5
+  overlay_filter: 0.3
 
 title:  "Log analyzer using Python Programming Langauge"
 date:   2018-01-19 23:10:10 +0800
