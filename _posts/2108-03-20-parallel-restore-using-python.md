@@ -8,7 +8,7 @@ categories: Greenplum Python
 tags: greenplum python postgresql backup restore
 ---
 
-I have written a python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all required steps mentioned in [this pivotal documentation](https://gpdb.docs.pivotal.io/510/admin_guide/managing/restore-diff-system.html)
+I have written a python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all required steps mentioned in [this pivotal documentation](https://gpdb.docs.pivotal.io/510/admin_guide/managing/restore-diff-system.html).
 
 ## Problem
 
