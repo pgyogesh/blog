@@ -280,8 +280,3 @@ defaults:
       related: true
       classes: wide
       toc: true
-
-page:
-  - header
-    overlay_image: /images/unsplash-12.jpg
-    overlay_filter: 0.3
