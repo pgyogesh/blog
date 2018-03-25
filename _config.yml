@@ -272,10 +272,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
-      header:
-        overlay_image: /images/unsplash-12.jpg
-        overlay_filter: 0.3
+      layout: single
       author_profile: true
       read_time: true
       comments: true
@@ -283,3 +280,7 @@ defaults:
       related: true
       classes: wide
       toc: true
+
+
+ overlay_image: /images/unsplash-12.jpg
+ overlay_filter: 0.3
