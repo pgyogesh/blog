@@ -1,21 +1,12 @@
 ---
-title: "Layout: Header Image Overlay"
+title: "kittens"
+layout: splash
 permalink: /rj/
+date: 2016-03-23T11:48:41-04:00
 header:
-  overlay_image: /images/unsplash-12.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  cta_url: "https://unsplash.com"
-categories:
-  - Layout
-  - Uncategorized
-tags:
-  - edge case
-  - image
-  - layout
-last_modified_at: 2018-03-20T16:00:52-04:00
----
-
-# header:
-#  overlay_image: "https://source.unsplash.com/random/?cat,cats,kitten,kittens"
-#  cta_url: "http://pgyogesh.com/blog/rj/"
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: https://source.unsplash.com/random/?cat,cats,kitten,kittens
+  cta_label: "More"
+  cta_url: "http://pgyogesh.com/blog/rj"
 ---
