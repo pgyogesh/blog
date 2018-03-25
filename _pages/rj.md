@@ -1,8 +1,8 @@
 ---
 title: "KITTENS"
 permalink: /rj/
-layout: home
-author_profile: fails
+layout: default
+author_profile: false
 header:
   image: https://source.unsplash.com/random/?cats
   overlay_filter: 0
