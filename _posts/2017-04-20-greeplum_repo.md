@@ -3,8 +3,8 @@ layout: single
 comments: true
 excerpt: "This is my first GitHub Repo created fro Greenplum DBA's"
 header:
-  overlay_image: https://source.unsplash.com/random
-  overlay_filter: 0.3
+  image: https://source.unsplash.com/random/800x300
+  overlay_filter: 0
 title:  "My first GitHub repository for Greenplum DBA"
 date:   2017-04-20 01:30:13 +0800
 categories: GitHub

@@ -3,8 +3,8 @@ layout: single
 comments: true
 excerpt: "List of SQL statements which can be used by Database Administrators in day to day life"
 header:
-  overlay_image: https://source.unsplash.com/random
-  overlay_filter: 0.5
+  image: https://source.unsplash.com/random/800x300
+  overlay_filter: 0
 title:  "Useful SQL scripts for Greenplum DBA"
 date:   2017-12-06 01:30:13 +0800
 categories: Greenplum

@@ -3,8 +3,8 @@ layout: single
 comments: true
 excerpt: "Give a basic idea creating highly available MarkLogic cluster"
 header:
-  overlay_image: https://source.unsplash.com/random
-  overlay_filter: 0.3
+  image: https://source.unsplash.com/random/800x300
+  overlay_filter: 0
 title:  "Making MarkLogic cluster highly available"
 date:   2017-11-04 01:30:13 +0800
 categories: MarkLogic

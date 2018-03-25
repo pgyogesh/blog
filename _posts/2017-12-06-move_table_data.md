@@ -3,8 +3,8 @@ layout: single
 comments: true
 excerpt: "A simple trick to move table data from one table to other table"
 header:
-  overlay_image: https://source.unsplash.com/random
-  overlay_filter: 0.5
+  image: https://source.unsplash.com/random/800x300
+  overlay_filter: 0
 title:  "Moving table data from one table to another"
 date:   2017-12-06 01:30:13 +0800
 categories: SQL
