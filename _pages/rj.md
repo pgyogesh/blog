@@ -1,9 +1,8 @@
 ---
 title: "KITTENS"
 permalink: /rj/
-layout: splash
 author_profile: false
 header:
-  image: https://source.unsplash.com/random/?cats
+  image: https://source.unsplash.com/random/?cat,cats,kitten,kittens
   cta_url: "http://pgyogesh.com/blog/rj/"
 ---
