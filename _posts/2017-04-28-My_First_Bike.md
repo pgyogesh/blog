@@ -4,7 +4,7 @@ comments: true
 excerpt: "Just sharing my experience of getting my first bike"
 header:
   overlay_image: /images/unsplash-14.png
-  overlay_filter: 0.3
+  overlay_filter: 0.5
 title:  "...And finally I got my first bike"
 date:   2017-04-28 01:30:13 +0800
 categories: Life

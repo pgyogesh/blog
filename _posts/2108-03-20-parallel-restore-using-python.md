@@ -5,7 +5,7 @@ excerpt: "Python program to parallel restore greenplum backup in dissimilar numb
 comments: true
 header:
   overlay_image: https://source.unsplash.com/random
-  overlay_filter: 0.3
+  overlay_filter: 0.5
 title:  "Greenplum Parallel Restore Using Python"
 date:   2018-03-20 10:10:00 +0800
 categories: Greenplum Python

@@ -3,8 +3,8 @@ layout: single
 comments: true
 excerpt: "Lists basic troubleshooting of performance issues in Greenplum"
 header:
-  overlay_image: /images/unsplash-07.jpg
-  overlay_filter: 0.3
+  overlay_image: https://source.unsplash.com/random
+  overlay_filter: 0.5
 title:  "Greenplum Database Query Performance Checklist"
 date:   2018-01-10 01:30:13 +0800
 categories: Greenplum
