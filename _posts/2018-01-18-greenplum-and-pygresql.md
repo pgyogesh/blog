@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Give a basic idea of using pygresql Python module with Greenplum and PostgreSQL"
 header:
-  image: https://source.unsplash.com/random/800x300
+  image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "Using pygresql python module with Greenplum"
 date:   2018-01-18 01:30:13 +0800

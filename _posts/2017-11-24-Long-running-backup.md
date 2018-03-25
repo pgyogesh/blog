@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Give a basic idea for creating a log analyzer using Python Programming"
 header:
-  image: https://source.unsplash.com/random/800x300
+  image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "How to check on which segment backup was running longer (ddboost)"
 date:   2017-11-24 01:30:13 +0800

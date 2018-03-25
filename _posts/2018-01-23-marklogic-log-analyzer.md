@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Python script to analyze MarkLogic Database Server Logs. It shows bar graph per hour."
 header:
-  image: https://source.unsplash.com/random/800x300
+  image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "Log Analyzer for MarkLogic Database Server"
 date:   2018-01-23 10:10:10 +0800

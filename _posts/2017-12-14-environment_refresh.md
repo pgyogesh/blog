@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Python program to switch the roles between the environments"
 header:
-  image: https://source.unsplash.com/random/800x300
+  image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "How do we do Greenplum Database environment refresh"
 date:   2017-12-14 01:30:13 +0800

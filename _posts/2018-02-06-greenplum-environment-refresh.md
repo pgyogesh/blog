@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Python script to refresh data between two environments and switch the roles"
 header:
-  image: https://source.unsplash.com/random/800x300
+  image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "Script: Greenplum environment refresh"
 date:   2018-02-06 10:10:10 +0800

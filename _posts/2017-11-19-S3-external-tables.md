@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Give a basic idea using S3 bucket as external table in Greenplum Database"
 header:
-  image: https://source.unsplash.com/random/800x300
+  image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "Guide to create external table in greenplum using Amazon S3 Buckets"
 date:   2017-11-19 01:30:13 +0800
