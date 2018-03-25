@@ -4,7 +4,7 @@ layout: single
 excerpt: "Python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all recommended steps by Pivotal."
 comments: true
 header:
-  overlay_image: /images/unsplash-image-1.jpg
+  overlay_image: https://source.unsplash.com/random
   overlay_filter: 0.3
 title:  "Greenplum Parallel Restore Using Python"
 date:   2018-03-20 10:10:00 +0800
