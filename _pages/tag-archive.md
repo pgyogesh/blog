@@ -4,6 +4,6 @@ permalink: /tags/
 layout: tags
 author_profile: true
 header:
-  overlay_image: https://source.unsplash.com/random
-  overlay_filter: 0.5
+  image: https://source.unsplash.com/random/800x300
+  overlay_filter: 0
 ---
