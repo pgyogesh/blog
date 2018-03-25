@@ -5,5 +5,5 @@ layout: splash
 author_profile: false
 header:
   image: https://source.unsplash.com/random/?cats
-  overlay_filter: 0
+  cta_url: "http://pgyogesh.com/blog/rj/"
 ---
