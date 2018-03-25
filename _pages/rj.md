@@ -1,5 +1,6 @@
 ---
 title: "Layout: Header Image Overlay"
+permalink: /rj/
 header:
   overlay_image: /images/unsplash-12.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
