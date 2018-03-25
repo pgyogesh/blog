@@ -2,12 +2,6 @@
 layout: archive
 ---
 
-{% if site.overlay_color or site.overlay_image or page.header.image %}
-<div class="page__hero{% if page.header.overlay_color or site.overlay_image %}--overlay{% endif %}"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
->
-{% endif %}
-
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
