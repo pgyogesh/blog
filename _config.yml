@@ -274,7 +274,8 @@ defaults:
     values:
       layout: splash
       header:
-        image: /images/unsplash-12.jpg
+        overlay_image: /images/unsplash-12.jpg
+        overlay_filter: 0.3
       author_profile: true
       read_time: true
       comments: true
