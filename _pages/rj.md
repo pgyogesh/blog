@@ -1,5 +1,4 @@
 ---
-title: "kittens"
 layout: single
 permalink: /rj/
 header:
