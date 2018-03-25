@@ -1,6 +1,6 @@
 ---
 header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_image: /images/unsplash-11.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   cta_url: "https://unsplash.com"
 
