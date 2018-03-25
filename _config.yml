@@ -281,6 +281,5 @@ defaults:
       classes: wide
       toc: true
 
-
- overlay_image: /images/unsplash-12.jpg
- overlay_filter: 0.3
+overlay_image: /images/unsplash-12.jpg
+overlay_filter: 0.3
