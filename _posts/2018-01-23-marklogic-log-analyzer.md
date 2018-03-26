@@ -18,7 +18,7 @@ This is displays the graphs for errors and warning or custom search like you wil
 
 ### Script:
 
-```python
+{% highlight python linenos %}
 #!/usr/bin/env python
 import re
 import optparse
@@ -105,7 +105,8 @@ if __name__ == '__main__':
         trim_log()
     else:
         print("Exiting on user request")
-```
+{% endhighlight %}
+
 
 ### Demo
 
