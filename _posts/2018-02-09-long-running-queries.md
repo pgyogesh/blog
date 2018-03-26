@@ -28,9 +28,9 @@ Hello... I have written a script to get long running queries in postgresql and g
   - Change SENDER to match with your domain name
   - Change RECIEVERS to add multiple receivers with quoma separator. (Ex: RECEIVERS = 'yogesh.jadhav@yourdomain.com;DBA-Greenplum@yourdomain.com')
 
-### long_running_queries.py
+### Script
 
-```python
+{% highlight python linenos %}
 #!/usr/bin/python
 import os
 import sys
@@ -92,6 +92,7 @@ if IS_LONG_RUNNING:
 else:
         logging.info("No queries are running for longer time. No need to send email")
 logging.info("Completed Successfully")
-```
+
+{% endhighlight %}
 
 If you have any issues or suggestions for this script, Hit it [here](https://github.com/pgyogesh/greenplum_dba/issues/new?title=Issue%20long%20running%20queries%20script:)
