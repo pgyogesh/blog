@@ -280,3 +280,4 @@ defaults:
       related: true
       classes: wide
       toc: true
+      teaser: https://source.unsplash.com/random/1200x400?technology
