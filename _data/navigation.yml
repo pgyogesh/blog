@@ -13,7 +13,7 @@ main:
   - title: "HOME"
     url: http://pgyogesh.com/GUI
   - title: "BLOG"
-    url: /blog/
+    url: /
   - title: "TAGS"
     url: /tags/  
   - title: "CATEGORIES"
