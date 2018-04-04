@@ -8,7 +8,8 @@ figure.highlight {
 }
 
 pre.highlight,
-.highlight pre { background-color: #272822; }
+.highlight pre { background-color: #272822;   width: 100%;
+}
 .highlight .hll { background-color: #22282A }
 .highlight .c { color: #99AA8A } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
