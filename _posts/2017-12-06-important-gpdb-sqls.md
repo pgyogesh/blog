@@ -17,15 +17,16 @@ Here I'm sharing my collection of SQL Script for Greenplum DBA. And of course fe
 
 ### List of member of a role
 
-```sql
+{% highlight sql linenos %}
 SELECT a.rolname
 FROM pg_roles a
 WHERE pg_has_role(a.oid,'your_rolname', 'member');
-```
+{% endhighlight %}
+
 
 ### List of roles and its members
 
-```sql
+{% highlight sql linenos %}
 SELECT r.rolname,
 	ARRAY(SELECT b.rolname
 	FROM pg_catalog.pg_auth_members m
@@ -34,19 +35,21 @@ SELECT r.rolname,
 FROM pg_catalog.pg_roles r
 WHERE r.rolname !~ '^pg_'
 ORDER BY 1;
-```
+{% endhighlight %}
+
 
 ### Resource Queue of user
 
-```sql
+{% highlight sql linenos %}
 SELECT *
 	FROM gp_toolkit.gp_resq_role
 	where rrrolname = 'rolename';
-```
+{% endhighlight %}
+
 
 ### Running queries or statements which are waiting in Resource Queues
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	rolname
 	,rsqname
@@ -60,12 +63,13 @@ WHERE pg_roles.rolresqueue=pg_locks.objid
 	AND pg_locks.objid=gp_toolkit.gp_resqueue_status.queueid
 	AND pg_stat_activity.procpid=pg_locks.pid
 	AND pg_stat_activity.usename=pg_roles.rolname;
-```
+{% endhighlight %}
+
 
 
 ### List of users associated with Resource Queue
 
-```sql
+{% highlight sql linenos %}
 SELECT rolname as RoleName
 ,case
 	when rolsuper = 't' then
@@ -83,37 +87,41 @@ end as RoleType
 FROM pg_roles, gp_toolkit.gp_resqueue_status
 WHERE pg_roles.rolresqueue=gp_toolkit.gp_resqueue_status.queueid
 order by rolname;
-```
+{% endhighlight %}
+
 
 ## Object Size and Workfiles
 
 ### Uncompressed size of table
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	pg_size_pretty(SUM(sotusize)::BIGINT)
 FROM gp_toolkit.gp_size_of_table_uncompressed where sotuschemaname = 'schema_name'  and sotutablename ='table_name';
-```
+{% endhighlight %}
+
 
 ### Uncompressed size of schema
 
-```sql
+{% highlight sql linenos %}
 SELECT pg_size_pretty(SUM(sotusize)::BIGINT)
 FROM gp_toolkit.gp_size_of_table_uncompressed
 WHERE sotuschemaname = '<schema_name>';
-```
+{% endhighlight %}
+
 
 ### Uncompressed size of current database
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	pg_size_pretty(SUM(sotusize)::BIGINT)
 FROM gp_toolkit.gp_size_of_table_uncompressed;
-```
+{% endhighlight %}
+
 
 ### Top big tables in schema with owner name
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	a.sotuschemaname as Schema,
 	a.sotutablename as Table,
@@ -124,11 +132,12 @@ JOIN pg_tables b ON (a.sotutablename = b.tablename)
 WHERE a.sotuschemaname = 'public'
 ORDER BY sotusize DESC
 LIMIT 50;
-```
+{% endhighlight %}
+
 
 ### Workfiles per query
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	g.datname "Database",
 	g.procpid "Process",
@@ -141,11 +150,12 @@ FROM gp_toolkit.gp_workfile_usage_per_query g
 JOIN pg_stat_activity p on g.sess_id = p.sess_id
 GROUP BY 1,2,3,4,p.current_query
 ORDER BY 4 DESC;
-```
+{% endhighlight %}
+
 
 ### Work files details on each segment
 
-```sql
+{% highlight sql linenos %}
 SELECT
 				gwe.datname as DatabaseName
 				,psa.usename as UserName
@@ -177,13 +187,14 @@ ORDER BY
 				,gwe.procpid
 				,gwe.sess_id
 				,sc.hostname;
-```
+{% endhighlight %}
+
 
 ## Database Activities and Locks
 
 ### Database Activities
 
-```sql
+{% highlight sql linenos %}
 SELECT
 datname as Database,
 procpid as Process_ID,
@@ -196,11 +207,12 @@ waiting as Is_Waiting
 FROM pg_stat_activity
 WHERE current_query NOT ilike '%IDLE%'
 ORDER BY 6 desc;
-```
+{% endhighlight %}
+
 
 ### Waiter's Information
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	l.locktype                    AS  "Waiters locktype",
 	d.datname                     AS  "Database",
@@ -219,11 +231,12 @@ WHERE l.pid=a.procpid
 AND l.database=d.oid
 AND l.granted = 'f'
 ORDER BY 3;
-```
+{% endhighlight %}
+
 
 ### Blocker's Information
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	l.locktype                      AS  "Blocker locktype",
 	d.datname                       AS  "Database",
@@ -243,11 +256,12 @@ AND l.database=d.oid
 AND l.granted = true
 AND relation in ( select relation from pg_locks where granted='f')
 ORDER BY 3;
-```
+{% endhighlight %}
+
 
 ### Waiter's and Blocker's Information
 
-```sql
+{% highlight sql linenos %}
 SELECT
 	kl.pid as blocking_pid,
 	ka.usename as blocking_user,
@@ -275,4 +289,4 @@ FROM pg_catalog.pg_locks bl
 		ON kl.pid = ka.procpid
 WHERE kl.granted and not bl.granted
 ORDER BY a.query_start;
-```
+{% endhighlight %}
