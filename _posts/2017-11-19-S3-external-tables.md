@@ -19,37 +19,40 @@ First we have to create two function to write to S3 and to read from S3 like bel
 # *Creating Functions and Protocol*
 
 
-```sql
+{% highlight sql linenos %}
 CREATE OR REPLACE FUNCTION read_from_s3()
 RETURNS integer
 AS  '$libdir/gps3ext.so', 's3_import'
 LANGUAGE C STABLE;
-```
+{% endhighlight %}
 
-```sql
+
+{% highlight sql linenos %}
 CREATE OR REPLACE FUNCTION read_from_s3()
 RETURNS integer
 AS '$libdir/gps3ext.so', 's3_import'
 LANGUAGE C STABLE;
-```
+{% endhighlight %}
+
 
 Then create protocol to access S3 from greenplum database.
 
-```sql
+{% highlight sql linenos %}
 CREATE PROTOCOL s3
 (writefunc = write_to_s3, readfunc = read_from_s3);
-```
+{% endhighlight %}
+
 
 # *Creating Configuration File*
 
 You can create sample configuration file using *gpcloudcheck* utility like below and then you can edit it as per your setting.
 
-```bash
+{% highlight bash linenos %}
 gpcheckcloud -t > s3_config.conf
-```
+{% endhighlight %}
 ###### Configuration file Example
 
-  ```
+{% highlight bash linenos %}
   secret = "Your AWS Secret ID"
   accessid = "Your AWS Access ID"
   threadnum = 4
@@ -64,7 +67,7 @@ gpcheckcloud -t > s3_config.conf
   server_side_encryption = ""
   # gpcheckcloud config
   gpcheckcloud_newline = "\n"
-  ```
+  {% endhighlight %}
 
 # *Creating S3 bucket on AWS*
 
@@ -76,21 +79,22 @@ gpcheckcloud -t > s3_config.conf
 
 You can use command line options like below:
 
-```bash
+{% highlight bash linenos %}
 gpcheckcload -c "s3://S3_region_endpoint/bucket_name/[prefix] config=/path/to/config_file"
-```
+{% endhighlight %}
 
 You can check your region endpoint [here](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region)
 
 ###### Example
-```bash
+
+{% highlight bash linenos %}
 $ gpcheckcloud -c "s3://s3-ap-south-1.amazonaws.com/greenplumext config=/home/gpadmin/s3.conf"
 File: Screen Shot 2017-01-23 at 1.14.21 AM.png, Size: 110279
 File: sample_1.csv, Size: 43
 File: sample_2.csv, Size: 43
 
 Your configuration works well.
-```
+{% endhighlight %}
 
 Once your configuration works, You can create external table with S3 location and start access S3 files for GPDB.
 
@@ -98,21 +102,21 @@ Once your configuration works, You can create external table with S3 location an
 
 # *Creating and accessing S3 external tables*
 ###### Example
-```sql
+{% highlight sql linenos %}
 CREATE EXTERNAL TABLE name_external(Firstname text, Lastname text)
 LOCATION ('s3://s3-ap-south-1.amazonaws.com/greenplumext/ config=/home/gpadmin/s3_root_v1.conf')
 FORMAT 'csv';
 
-```
+{% endhighlight %}
 
-```sql
+{% highlight sql linenos %}
 SELECT * FROM name_external
 WHERE firstname='Yogesh';                                                                                                
 
 firstname | lastname
 -----------+----------
  Yogesh    | Jadhav
-```
+ {% endhighlight %}
 
 # Important Links
 
