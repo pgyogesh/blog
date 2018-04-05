@@ -45,8 +45,8 @@ I have written a python program to parallel restore greenplum backup in dissimil
 
 ### Funtion
 
- ```sql
- CREATE FUNCTION test_pg_sleep(TEXT, INTEGER) RETURNS VOID AS $$
+{% highlight sql linenos %}
+CREATE FUNCTION test_pg_sleep(TEXT, INTEGER) RETURNS VOID AS $$
 DECLARE
     name ALIAS for $1;
     delay ALIAS for $2;
@@ -54,7 +54,9 @@ BEGIN
     PERFORM pg_sleep(delay);
 END;
 $$ LANGUAGE 'plpgsql' STRICT;
-```
+
+{% endhighlight %}
+
 
 ### Backup files
 
