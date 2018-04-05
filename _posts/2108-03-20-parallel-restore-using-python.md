@@ -62,7 +62,7 @@ $$ LANGUAGE 'plpgsql' STRICT;
 
 Below are the backup files which contains statements for above function statements. I have given various values in function to sleep.
 
-```bash
+{% highlight bash %}
 [~/sample_dumps] [0]
 $ ls
 gp_dump_-1_1_1234567890           gp_dump_2_10_1234567890           
@@ -96,7 +96,7 @@ select test_pg_sleep('segment_7_file',35)
 select test_pg_sleep('segment_8_file',40)
 
 select test_pg_sleep('segment_9_file',45)
-```
+{% endhighlight %}
 
 ### Running Script
 
@@ -104,19 +104,19 @@ Below are the two sessions, In first session I'm running restore script and in s
 
 #### Session 1:
 
-```bash
+{% highlight bash %}
 python2.7 parallel_restore.py -d icprod -t 1234567890 -u sample_dumps/ -p 6
-```
+{% endhighlight %}
 
 #### Session 2:
 
-```bash
+{% highlight bash %}
 $ while True
 > do
 > sleep 1
 > psql icprod -c "SELECT pid,query,now() - query_start as Query_Duration from pg_stat_activity where query not ilike '%pg_stat%';"
 > done
-```
+{% endhighlight %}
 
 ## Demo
 Below is live recording of above two sessions. You may want to click on fullscreen for better view.
@@ -127,7 +127,7 @@ Below is live recording of above two sessions. You may want to click on fullscre
 
 ## Help
 
-```
+{% highlight bash %}
 [gpadmin@mdw ~]$ ./parallel_restore.py --help
 Usage:
 python2 paralled_restore.py -d <database_name> -u <backup_files_directory> -t <dump_key> -p <number of parallel processes
@@ -143,7 +143,7 @@ Options:
                         Specify number of parallel-processes
   -u DIRECTORY, --directory=DIRECTORY
                         Specify Backup directory
-```
+{% endhighlight %}
 
 #### `-d, --database`
 This option is to specify the target database. If target database doesn't exist in the environment, Script exits immediately.
