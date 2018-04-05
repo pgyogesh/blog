@@ -59,6 +59,7 @@ $$ LANGUAGE 'plpgsql' STRICT;
 ### Backup files
 
 Below are the backup files which contains statements for above function statements. I have given various values in function to sleep.
+
 ```bash
 [~/sample_dumps] [0]
 $ ls
@@ -99,13 +100,13 @@ select test_pg_sleep('segment_9_file',45)
 
 Below are the two sessions, In first session I'm running restore script and in second session I'm monitoring pg_stat_activity table.
 
-   #### Session 1:
+#### Session 1:
 
 ```bash
 python2.7 parallel_restore.py -d icprod -t 1234567890 -u sample_dumps/ -p 6
 ```
 
-   #### Session 2:
+#### Session 2:
 
 ```bash
 $ while True
