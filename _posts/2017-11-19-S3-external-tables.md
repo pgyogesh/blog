@@ -16,8 +16,9 @@ I just created external table in greenplum using Amazon S3 web service. So here 
 
 First we have to create two function to write to S3 and to read from S3 like below:
 
-# *Creating Functions and Protocol*
+## Creating Functions and Protocol
 
+### Functions
 
 {% highlight sql linenos %}
 CREATE OR REPLACE FUNCTION read_from_s3()
@@ -37,13 +38,15 @@ LANGUAGE C STABLE;
 
 Then create protocol to access S3 from greenplum database.
 
+###Protocol
+
 {% highlight sql linenos %}
 CREATE PROTOCOL s3
 (writefunc = write_to_s3, readfunc = read_from_s3);
 {% endhighlight %}
 
 
-# *Creating Configuration File*
+## Creating Configuration File
 
 You can create sample configuration file using *gpcloudcheck* utility like below and then you can edit it as per your setting.
 
@@ -69,12 +72,12 @@ gpcheckcloud -t > s3_config.conf
   gpcheckcloud_newline = "\n"
   {% endhighlight %}
 
-# *Creating S3 bucket on AWS*
+## Creating S3 bucket on AWS*
 
   + You can follow [this](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) guide to to create S3 bucket.
 
 
-# *Testing configuration using gpcheckcloud utility.*
+## Testing configuration using gpcheckcloud utility.
 
 
 You can use command line options like below:
@@ -85,7 +88,7 @@ gpcheckcload -c "s3://S3_region_endpoint/bucket_name/[prefix] config=/path/to/co
 
 You can check your region endpoint [here](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region)
 
-###### Example
+### Example
 
 {% highlight bash linenos %}
 $ gpcheckcloud -c "s3://s3-ap-south-1.amazonaws.com/greenplumext config=/home/gpadmin/s3.conf"
@@ -100,8 +103,10 @@ Once your configuration works, You can create external table with S3 location an
 
 
 
-# *Creating and accessing S3 external tables*
-###### Example
+## Creating and accessing S3 external tables
+
+### Example
+
 {% highlight sql linenos %}
 CREATE EXTERNAL TABLE name_external(Firstname text, Lastname text)
 LOCATION ('s3://s3-ap-south-1.amazonaws.com/greenplumext/ config=/home/gpadmin/s3_root_v1.conf')
@@ -118,7 +123,7 @@ firstname | lastname
  Yogesh    | Jadhav
  {% endhighlight %}
 
-# Important Links
+## Important Links
 
 
 + [S3 Protocol](https://gpdb.docs.pivotal.io/510/admin_guide/external/g-s3-protocol.html)
