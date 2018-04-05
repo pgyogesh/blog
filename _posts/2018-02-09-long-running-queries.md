@@ -4,7 +4,7 @@ comments: true
 excerpt: "Python program send email notification if query is running for longer time."
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?nature
-  overlay_filter: 0
+  overlay_filter: 0.5
 title:  "Script: Getting email alert for long running queries"
 date:   2018-02-09 10:10:10 +0800
 categories: Postgresql Greenplum

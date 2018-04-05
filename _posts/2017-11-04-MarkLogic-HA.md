@@ -4,7 +4,7 @@ comments: true
 excerpt: "Give a basic idea creating highly available MarkLogic cluster"
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?nature
-  overlay_filter: 0
+  overlay_filter: 0.5
 title:  "Making MarkLogic cluster highly available"
 date:   2017-11-04 01:30:13 +0800
 categories: MarkLogic
