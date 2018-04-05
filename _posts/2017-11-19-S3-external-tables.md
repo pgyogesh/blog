@@ -1,10 +1,10 @@
 ---
 layout: single
 comments: true
-excerpt: "Give a basic idea using S3 bucket as external table in Greenplum Database"
+excerpt: "Gives a basic idea using S3 bucket as external table in Greenplum Database"
 header:
-  image: https://source.unsplash.com/random/1200x400?nature
-  overlay_filter: 0
+  overlay_image: https://source.unsplash.com/random/1200x400?nature
+  overlay_filter: 0.5
 title:  "Guide to create external table in greenplum using Amazon S3 Buckets"
 date:   2017-11-19 01:30:13 +0800
 categories: Greenplum
@@ -72,7 +72,7 @@ gpcheckcloud -t > s3_config.conf
   gpcheckcloud_newline = "\n"
   {% endhighlight %}
 
-## Creating S3 bucket on AWS*
+## Creating S3 bucket on AWS
 
   + You can follow [this](http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) guide to to create S3 bucket.
 

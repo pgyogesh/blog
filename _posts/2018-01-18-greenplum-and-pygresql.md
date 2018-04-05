@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Give a basic idea of using pygresql Python module with Greenplum and PostgreSQL"
 header:
-  image: https://source.unsplash.com/random/1200x400?nature
+  overlay_image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "Using pygresql python module with Greenplum"
 date:   2018-01-18 01:30:13 +0800
@@ -14,24 +14,24 @@ tags: github greenplum postgresql
 
 Python is my favourite progamming langauge and Greenplum Database is my key skill. So, Using both to perform some task is no surprise. At first I tried to use [_psycopg2_](http://initd.org/psycopg/) but When I started looking in [Greenplum source code](https://github.com/greenplum-db/gpdb) I found that Pivotal is using [pygresql](http://www.pygresql.org). So, I too thought using the same.
 
-##### So, What is pygresql?
+## So, What is pygresql?
 Pygresql is Python interface for PostgreSQL. It allows PostgreSQL queries to run through Python script.
 
-##### Importing pygresql module in Python program.
+## Importing pygresql module in Python program.
 
-```python
+{% highlight python linenos %}
 from pygresql.pg import DB
-```
+{% endhighlight %}
 
-##### Creating connection to database
+## Creating connection to database
 
-```python
+{% highlight python linenos %}
 con = DB(dbname='gpadmin', host='localhost', port=5432, user='gpadmin', passwd='changeme')
-```
+{% endhighlight %}
 
-##### Running Queries
+## Running Queries
 
-```python
+{% highlight python linenos %}
 >>>a = con.query("select * from gp_segment_configuration where hostname=mdw")
 >>>print(a) #This will print the result as same as psql utility
 dbid|content|role|preferred_role|mode|status|port|hostname       |address|replication_port|san_mounts
@@ -44,14 +44,14 @@ dbid|content|role|preferred_role|mode|status|port|hostname       |address|replic
 
 >>> a.dictresult() #To get result as Python Dictionary
 [{'status': 'u', 'replication_port': None, 'dbid': 1, 'hostname': 'mdw', 'preferred_role': 'p', 'content': -1, 'role': 'p', 'mode': 's', 'address': 'mdw', 'san_mounts': None, 'port': 5432}]
-```
+{% endhighlight %}
 
 
 
-##### Closing the connection
+## Closing the connection
 
-```python
+{% highlight python linenos %}
 con.close()
-```
+{% endhighlight %}
 
 Here is complete [tutorial](http://www.pygresql.org/contents/tutorial.html) for pygresql.

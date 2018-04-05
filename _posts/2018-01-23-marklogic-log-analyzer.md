@@ -3,7 +3,7 @@ layout: single
 comments: true
 excerpt: "Python script to analyze MarkLogic Database Server Logs. It shows bar graph per hour."
 header:
-  image: https://source.unsplash.com/random/1200x400?nature
+  overlay_image: https://source.unsplash.com/random/1200x400?nature
   overlay_filter: 0
 title:  "Log Analyzer for MarkLogic Database Server"
 date:   2018-01-23 10:10:10 +0800
@@ -16,7 +16,7 @@ As a DBA, It is very frequent that we have to check the log file for errors, war
 
 This is displays the graphs for errors and warning or custom search like you will see it in below demo. It also trims the log from perticular time to perticular time.
 
-### Script:
+## Script:
 
 {% highlight python linenos %}
 #!/usr/bin/env python
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 {% endhighlight %}
 
 
-### Demo
+## Demo
 
 <script src="https://asciinema.org/a/158537.js" id="asciicast-158537" async></script>
 
