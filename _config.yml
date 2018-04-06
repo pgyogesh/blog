@@ -27,7 +27,7 @@ teaser                   : # /images/unsplash-image-1.jpg # path of fallback tea
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 50
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "google-plus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : "www.pgyogesh.com"
   discourse:
