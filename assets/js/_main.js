@@ -2,6 +2,21 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
+
+   $(document).ready(function(){
+       $(window).scroll(function(){
+           if ($(this).scrollTop() > 100) {
+               $('#scroll_top').fadeIn();
+           } else {
+               $('#scroll_top').fadeOut();
+           }
+       });
+       $('#scroll_top').click(function(){ 
+           $("html, body").animate({ scrollTop: 0 }, 600);
+           return false;
+       });
+   });
+
 $(document).ready(function() {
   // Sticky footer
   var bumpIt = function() {
