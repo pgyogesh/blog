@@ -14,16 +14,16 @@ layout: default
   {% endunless %}
 {% endif %}
 
-{    
+{
     $(document).ready(function(){
         $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
-                $('#scroll').fadeIn();
+                $('#scroll_top').fadeIn();
             } else {
-                $('#scroll').fadeOut();
+                $('#scroll_top').fadeOut();
             }
         });
-        $('#scroll').click(function(){
+        $('#scroll_top').click(function(){
             $("html, body").animate({ scrollTop: 0 }, 600);
             return false;
         });
