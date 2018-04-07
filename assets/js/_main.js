@@ -6,12 +6,12 @@
    $(document).ready(function(){
        $(window).scroll(function(){
            if ($(this).scrollTop() > 100) {
-               $('#scroll_top').fadeIn();
+               $('#scroll').fadeIn();
            } else {
-               $('#scroll_top').fadeOut();
+               $('#scroll').fadeOut();
            }
        });
-       $('#scroll_top').click(function(){ 
+       $('#scroll').click(function(){
            $("html, body").animate({ scrollTop: 0 }, 600);
            return false;
        });

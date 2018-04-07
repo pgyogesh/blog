@@ -13,7 +13,7 @@ layout: default
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
-
+<a href="#" id="scrollp" style="display: none;"><span></span></a>
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -32,7 +32,6 @@ layout: default
           {% endif %}
         </header>
       {% endunless %}
-<a href="#" id="scroll_top" style="display: none;"><span> top </span></a>
       <section class="page__content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right">
