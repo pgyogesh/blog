@@ -9,4 +9,4 @@ header:
 ---
 
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mPiLutLgPaihLS4zBOnrb9mupxQ" width="100%" height="100%"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mPiLutLgPaihLS4zBOnrb9mupxQ" width="100%"></iframe>
