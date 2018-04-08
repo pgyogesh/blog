@@ -16,7 +16,7 @@ As a DBA, It is very frequent that we have to check the log file for errors, war
 
 This is displays the graphs for errors and warning or custom search like you will see it in below demo. It also trims the log from perticular time to perticular time.
 
-## Script:
+## Script
 
 {% highlight python linenos %}
 #!/usr/bin/env python

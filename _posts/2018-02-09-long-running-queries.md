@@ -14,7 +14,7 @@ tags: postgresql greenplum scripts python
 
 Hello... I have written a script to get long running queries in postgresql and greenplum. This script will check if there are any long running queries and if found it will send emails to receivers.
 
-### Things to modify:
+### Things to modify
 
   - Change ENVIRONMENT to match with environment running script. This environment will be added in your email subject and sender name
       Example:

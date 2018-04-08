@@ -15,7 +15,7 @@ tags: python programming scripts
 
 As a MarkLogic DBA(also Greenplum DBA), We had to look at error files frequently and looking such a huge file was not a easy. So, I decided to create a log analyzer script using python. here I'll be demonstrating this script with sample log file(Not MarkLogic)
 
-## Script:
+## Script
 
 {% highlight python linenos %}
 
@@ -42,7 +42,7 @@ for h in hour:
     file.close()
 {% endhighlight %}
 
-## Demo:
+## Demo
 
 <script src="https://asciinema.org/a/KDb3eEYVWjDDzEyY3uY7ztN8A.js" id="asciicast-KDb3eEYVWjDDzEyY3uY7ztN8A" async></script>
 
