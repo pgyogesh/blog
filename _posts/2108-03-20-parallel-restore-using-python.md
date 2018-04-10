@@ -1,6 +1,6 @@
 ---
 layout: splash
-
+toc: true
 excerpt: "Python program to parallel restore greenplum backup in dissimilar number of segment instances. This script has all recommended steps by Pivotal."
 comments: true
 header:
