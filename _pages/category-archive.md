@@ -1,5 +1,6 @@
 ---
 title: "Posts by Category"
+excerpt: "Explore the blog categories like Greenplum, Postgresql, Python and etc."
 layout: categories
 permalink: /categories/
 author_profile: true
