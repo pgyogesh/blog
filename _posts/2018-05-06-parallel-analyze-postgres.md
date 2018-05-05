@@ -5,7 +5,7 @@ comments: true
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?elephant
   overlay_filter: 0.5
-title:  "Running analyze parallel on PostgreSQL Database"
+title:  "Running parallel analyze on PostgreSQL Database"
 date:   2018-05-06 10:10:00 +0800
 categories: Postgresql Python
 tags: greenplum python postgresql backup restore
@@ -145,7 +145,7 @@ This option is to specify the target host. The default value is `localhost`
 
 Specify this option if you want to analyze on user tables and not system tables. By default this program analyzes system tables.
 
-## Sample run log 1
+## Run log 1 (Complete database)
 
 {% highlight bash linenos %}
 
@@ -159,14 +159,17 @@ $ ./analyzedb -d jadhavy -p 10
 2018-05-06 00:23:34,018:INFO:60 tables completed out of 76 tables
 2018-05-06 00:23:34,062:INFO:70 tables completed out of 76 tables
 2018-05-06 00:23:34,113:INFO:76 tables completed out of 76 tables
- {% endhighlight %}
+{% endhighlight %}
 
+## Run log 2 (Specific schema)
 
 {% highlight bash linenos %}
 $ ./analyzedb -d jadhavy -p 10 -n test
 2018-05-06 00:23:52,681:INFO:Running analyze on 6 tables
 2018-05-06 00:23:52,755:INFO:6 tables completed out of 6 tables
- {% endhighlight %}
+{% endhighlight %}
+
+## Run log 3 (User tables only)
 
 {% highlight bash linenos %}
 $ ./analyzedb -d jadhavy -p 10 --user-tables
