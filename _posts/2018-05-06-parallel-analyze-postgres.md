@@ -8,7 +8,7 @@ header:
 title:  "Running parallel analyze on PostgreSQL Database"
 date:   2018-05-06 10:10:00 +0800
 categories: Postgresql Python
-tags: greenplum python postgresql backup restore
+tags: python postgresql greenplum analyze
 ---
 
 I have written a python program to run analyze parallel on postgres tables. This script will reduce lot of time compared to running analyze on database with analyze SQL command.
