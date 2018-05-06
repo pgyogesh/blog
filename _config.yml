@@ -203,7 +203,6 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-#  - jekyll-archives
   - github-pages
   - jekyll-paginate
   - jekyll-sitemap
@@ -211,6 +210,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
