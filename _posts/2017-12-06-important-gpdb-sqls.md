@@ -290,3 +290,98 @@ FROM pg_catalog.pg_locks bl
 WHERE kl.granted and not bl.granted
 ORDER BY a.query_start;
 {% endhighlight %}
+
+## Maintenance
+
+### Table Fragmentation and total wasted space
+
+source: dbrnd.com
+
+{% highlight sql linenos %}
+
+select
+	current_database() as dbname
+	, relid
+	, schemaname
+	, tablename
+	, round(bloat,1) as bloat_ratio
+	, pg_size_pretty(expbytes) as expected_size
+	, pg_size_pretty(relbytes) as relation_size
+	, pg_size_pretty(wastedbytes) as wasted_space
+	, round(1.0 * relbytes / nullif((sum(relbytes) over ())::bigint,0),4) as relative_size
+	, round((bloat-1) * (1.0 * relbytes / nullif((sum(relbytes) over ())::bigint, 0)), 8) as concern
+from
+(
+	SELECT
+		relid
+		, schemaname
+		, tablename
+		, CASE WHEN otta=0 THEN 
+			0.0 
+			ELSE 
+			sml.relpages/otta::numeric 
+			END AS bloat
+		, reltuples::bigint
+		, relpages::bigint
+		, otta
+		, (bs*otta)::bigint as expbytes
+		, CASE WHEN relpages < otta THEN 0 ELSE 
+		(bs*(sml.relpages-otta))::bigint 
+		END AS wastedbytes
+		, CASE WHEN relpages < otta THEN 0 ELSE relpages::bigint - otta END AS wastedpages
+		, (bs*relpages)::bigint as relbytes
+	FROM
+	(
+		SELECT
+			schemaname
+			, tablename
+			, cc.oid as relid
+			, cc.reltuples
+			, cc.relpages
+			, bs
+			, CEIL((cc.reltuples*((datahdr+ma-(CASE WHEN datahdr%ma=0 THEN ma ELSE datahdr%ma END))+nullhdr2+4))/(bs-20::float)) AS otta 
+		FROM 
+		(
+			SELECT
+				ma
+				, bs
+				, schemaname
+				, tablename
+				, (datawidth+(hdr+ma-(case when hdr%ma=0 THEN ma ELSE hdr%ma END)))::numeric AS datahdr
+				, (maxfracsum*(nullhdr+ma-(case when nullhdr%ma=0 THEN ma ELSE nullhdr%ma END))) AS nullhdr2
+			FROM
+			(
+				SELECT
+					schemaname
+					, tablename
+					, hdr
+					, ma
+					, bs
+					, SUM((1-s.null_frac)*avg_width) AS datawidth
+					, MAX(s.null_frac) AS maxfracsum
+					, hdr+(1+(count(case when s.null_frac<>0 then 1 end))/8) as nullhdr
+				FROM 
+				pg_stats s
+				cross join 
+				(
+					SELECT
+					current_setting('block_size')::numeric AS bs
+					, CASE WHEN substring(version(),12,3) IN ('8.0','8.1','8.2') THEN 27 ELSE 23 END AS hdr
+					, CASE WHEN version() ~ 'mingw32' THEN 8 ELSE 4 END AS ma
+				) AS constants
+				GROUP BY schemaname, tablename, hdr, ma, bs
+			) AS foo
+		) AS rs
+		JOIN pg_class cc 
+		ON
+		cc.relname = rs.tablename 
+		and cc.relkind = 'r'
+		JOIN pg_namespace nn 
+		ON
+		cc.relnamespace = nn.oid 
+		AND nn.nspname = rs.schemaname 
+	) AS sml
+) wrapper
+where wastedbytes > 2*1024*1024 and bloat >= 1.4order by (bloat-1) * (1.0 * relbytes / nullif((sum(relbytes) over ())::bigint, 0)) desc;
+
+{% endhighlight %}
