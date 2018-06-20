@@ -1,0 +1,52 @@
+---
+layout: single
+comments: true
+excerpt: "As a DBA, Many times we had to collect the row count for all the tables in database. Here are two steps that can fulfill the requirement of getting the row count of all tables."
+header:
+  overlay_image: https://source.unsplash.com/random/1200x400?nature
+  overlay_filter: 0.5
+title:  "Getting to row count for all the tables in Database"
+date:   2018-02-09 10:10:10 +0800
+categories: Greenplum
+read: 10 Mins
+tags: postgresql greenplum scripts sql
+---
+
+As a DBA, Many times we had to collect the row count for all the tables in database. Below are the two steps that can fulfill the requirement of getting the row count of all tables.
+
+### CREATE FUNCTION
+
+{% highlight SQL linenos %}
+CREATE or REPLACE FUNCTION 
+count_rows(schemaname text, tablename text) RETURNS integer
+AS
+$body$
+DECLARE
+  result integer;
+  query varchar;
+BEGIN
+  query := 'SELECT count(1) FROM ' || schema || '.' || tablename;
+  execute query into result;
+  return result;
+END;
+$body$
+LANGUAGE plpgsql;
+{% endhighlight %}
+
+### Query to get count
+
+{% highlight SQL linenos %}
+
+SELECT
+     n.nspname as "Schema",
+     c.relname as "Table",
+     count_rows(n.nspname, c.relname)
+FROM pg_catalog.pg_class c
+     LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+WHERE c.relkind = 'r'
+AND c.relstorage != 'x' -- to exclude the external tables
+AND n.nspname <> 'pg_catalog'
+AND n.nspname <> 'information_schema'
+ORDER BY 3 desc;
+
+{% endhighlight %}
