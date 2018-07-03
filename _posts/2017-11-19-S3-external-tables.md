@@ -38,7 +38,7 @@ LANGUAGE C STABLE;
 
 Then create protocol to access S3 from greenplum database.
 
-###Protocol
+### Protocol
 
 {% highlight sql linenos %}
 CREATE PROTOCOL s3
