@@ -193,6 +193,14 @@
         </li>
       {% endif %}
 
+      {% if author.reddit %}
+        <li>
+          <a href="https://www.reddit.com/user/{{ author.foursquare }}" itemprop="sameAs">
+            <i class="fab fa-fw fa-reddit" aria-hidden="true"></i> Reddit
+          </a>
+        </li>
+      {% endif %}      
+      
       {% if author.steam %}
         <li>
           <a href="https://steamcommunity.com/id/{{ author.steam }}" itemprop="sameAs">
