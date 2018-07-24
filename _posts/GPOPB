@@ -1,0 +1,36 @@
+---
+layout: single
+excerpt: "Python utility to process Greenplum objects in bulk and in parallel"
+comments: true
+header:
+  overlay_image: https://source.unsplash.com/random/1200x400?nature,technology,city
+  overlay_filter: 0.5
+title:  "GPOPB: Greenplum Object Processing in Bulk"
+date:   2018-07-20 10:10:00 +0800
+categories: Greenplum Python
+tags: greenplum python postgresql bulk-processing parallel-processing
+---
+
+## Introduction
+
+I have developed a python utility to process the Greenplum in objects in bulk and in parallel. This utility can perform any task that we can do using SQL queries like VACUUM, VACUUM FULL, ANALYZE, REINDEX, changing permissions and many.
+
+This utility uses 3 modules such as process, objects and configuration module. You can find these modules in `config` directory.
+
+### Process module
+
+In this module, We can define what task we have to perform such VACUUM, REINDEX or any other task you would like to do.
+
+### Configuration Module
+
+In this module, We have specify the database name and maximum parallel threads
+
+### Object module
+
+In this module, We can fetch the database objects using SQL query. If fetching a set of objects using SQL query is not possible, We can mention all objects in single file (one object per line) and `--ad-hoc` option to specify to file name.
+
+For Example:
+
+`python gpopb.py --ad-hoc <path/to/file>`
+
+## Utility
