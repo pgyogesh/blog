@@ -6,7 +6,7 @@ header:
 <form>
   <fieldset>
     <legend> Search </legend>
-    <input type="text" size=30 id="search"> </br>
+    <input type="text" size=30 id="search">   
   <fieldset>
 <form>
 
