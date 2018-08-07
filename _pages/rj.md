@@ -1,8 +1,8 @@
 ---
 layout: single
-permalink: /rj/
+permalink: /oneplus/
 header:
-  image: https://source.unsplash.com/random/?cat
+  image: http://source.unsplash.com/random/1080x2280
 ---
 
-[More Kittens](http://pgyogesh.com/blog/rj){: .btn .btn--primary .btn--x-large}
+[More Kittens](http://pgyogesh.com/blog/oneplus){: .btn .btn--primary .btn--x-large}
