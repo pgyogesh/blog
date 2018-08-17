@@ -2,13 +2,5 @@
 layout: single
 permalink: /oneplus/
 header:
+  overlay_image: https://source.unsplash.com/random/1080x2280
 ---
-<form>
-  <fieldset>
-    <legend> Search </legend>
-    <input type="text" size=30 id="search">   
-  <fieldset>
-<form>
-
-
-<a href="#" class="btn--success"> Submit </a>
