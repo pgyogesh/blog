@@ -83,5 +83,5 @@ https://www.instagram.com/stories/highlights/17940055123146834/
 
 <figure class="half">
     <a href="/assets/images/image5.jpg"><img src="/assets/images/image5.jpg"></a>
-    <a href="/assets/images/image6.jpg"><img src="/assets/images/image6.jpg"></a>
+    <a href="/blog/assets/images/image6.jpg"><img src="/blog/assets/images/image6.jpg"></a>
 </figure>
