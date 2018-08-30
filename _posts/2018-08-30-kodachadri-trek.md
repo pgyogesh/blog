@@ -63,7 +63,7 @@ https://www.instagram.com/stories/highlights/17940055123146834/
 ## Photos
 
 <figure class="image-popup">
-    <a href="/blog/assets/images/image3.jpg"><img src="/blog/assets/images/image3.jpg"></a>
+    <a><img src="/blog/assets/images/image3.jpg"></a>
 </figure>
 
 
@@ -79,6 +79,7 @@ https://www.instagram.com/stories/highlights/17940055123146834/
 
 <figure class="image-popup">
     <a href="/blog/assets/images/image2.jpg"><img src="/blog/assets/images/image2.jpg"></a>
+    <figcaption> Credits: Aniket Gangakhedkar </figcaption>
 </figure>
 
 <figure class="half">
