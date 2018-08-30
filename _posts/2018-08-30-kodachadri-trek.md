@@ -6,7 +6,7 @@ header:
   overlay_image: images/image3.jpg
   overlay_filter: 0.5
 title:  "कोडाचाद्री ट्रेक"
-date:   2018-03-20 10:10:00 +0800
+date:   2018-08-30 10:10:00 +0800
 categories: Life
 tags: life trekking travel
 ---
