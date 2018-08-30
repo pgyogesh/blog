@@ -3,7 +3,7 @@ layout: single
 excerpt: "कोडाचाद्री पश्चिम घाटातील शिखरांपैकी एक आहे आणि शिमोगा जिल्ह्यातील सर्वात उंच की जिथून आपण शिखरापेक्षा खाली ढग अनुभवू शकतो. ढगांचा एक समुद्र आपण नेहमीच डोळ्यांनी इथून पाहू शकतो. "
 comments: true
 header:
-  overlay_image: images/image3.jpg
+  overlay_image: /assets/images/image3.jpg
   overlay_filter: 0.5
 title:  "कोडाचाद्री ट्रेक"
 date:   2018-08-30 10:10:00 +0800
