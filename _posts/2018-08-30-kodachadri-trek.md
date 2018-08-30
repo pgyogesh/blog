@@ -36,14 +36,19 @@ tags: life trekking travel
 ## Attractions:
 
 १. हिडलूमने फाल्स 
+
 २. आरासीनगुंडी फॉल्स 
+
 ३. sarvajna peetha - असा मानलं जात कि इथे शंकराचार्य ध्यान (Meditation) करण्यासाठी यायचे.
 
 ## Nearby Attractions:
 
 १. Nagara Fort: २५ किलोमीटर्स 
+
 २. जोगचा धबधबा: ९० किलोमीटर्स 
+
 ३. शिमोगा: १११ किलोमीटर्स
+
 ४. आगुंबे: ८८ किलोमीटर्स
 
 ## Region :
