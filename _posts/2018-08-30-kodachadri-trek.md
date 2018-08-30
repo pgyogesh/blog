@@ -63,26 +63,26 @@ https://www.instagram.com/stories/highlights/17940055123146834/
 ## Photos
 
 <figure class="image-popup">
-    <a href="/assets/images/image1.jpg"><img src="/blog/assets/images/image3.jpg"></a>
+    <a href="/blog/assets/images/image1.jpg"><img src="/blog/assets/images/image3.jpg"></a>
 </figure>
 
 
 <figure class="image-popup">
-    <a href="/assets/images/image1.jpg"><img src="/blog/assets/images/image1.jpg"></a>
+    <a href="/blog/assets/images/image1.jpg"><img src="/blog/assets/images/image1.jpg"></a>
 </figure>
 
 
 <figure class="image-popup">
-    <a href="/assets/images/image4.jpg"><img src="/blog/assets/images/image4.jpg"></a>
+    <a href="/blog/assets/images/image4.jpg"><img src="/blog/assets/images/image4.jpg"></a>
 </figure>
 
 
 <figure class="image-popup">
-    <a href="/assets/images/image2.jpg"><img src="/blog/assets/images/image2.jpg"></a>
+    <a href="/blog/assets/images/image2.jpg"><img src="/blog/assets/images/image2.jpg"></a>
     <figcaption> Credits: Aniket Gangakhedkar </figcaption>
 </figure>
 
 <figure class="half">
-    <a href="/assets/images/image5.jpg"><img src="/blog/assets/images/image5.jpg"></a>
-    <a href="/assets/images/image6.jpg"><img src="/blog/assets/images/image6.jpg"></a>
+    <a href="/blog/assets/images/image5.jpg"><img src="/blog/assets/images/image5.jpg"></a>
+    <a href="/blog/assets/images/image6.jpg"><img src="/blog/assets/images/image6.jpg"></a>
 </figure>
