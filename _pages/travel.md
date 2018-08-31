@@ -1,8 +1,8 @@
 ---
 title: "My Travel Map"
 permalink: /travel/
-layout: default
-author_profile: true
+layout: archive
+author_profile: false
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?nature,technology,city
   overlay_filter: 0.35
