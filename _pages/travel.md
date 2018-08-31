@@ -1,7 +1,7 @@
 ---
 title: "My Travel Map"
 permalink: /travel/
-layout: single
+layout: default
 author_profile: true
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?nature,technology,city
@@ -13,7 +13,7 @@ header:
 
 {% for i in (1..tags_max) reversed %}
   {% for tag in site.tags %}
-    {% if tag == 'travel' %}
+    {% if tag == "travel" %}
       <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ tag[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
