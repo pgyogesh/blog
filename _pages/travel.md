@@ -1,6 +1,6 @@
 ---
 permalink: /travel/
-layout: archive
+layout: default
 author_profile: false
 ---
 
