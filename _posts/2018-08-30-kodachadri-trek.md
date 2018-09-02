@@ -58,7 +58,7 @@ tags: life trekking travel
 Mookambika Wildlife Sanctuary
 
 ## Instagram Stories
-https://www.instagram.com/stories/highlights/17940055123146834/
+link.pgyogesh.com/insta-kodachadri
 
 ## Photos
 
