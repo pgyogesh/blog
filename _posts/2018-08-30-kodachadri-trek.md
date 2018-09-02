@@ -63,7 +63,7 @@ link.pgyogesh.com/insta-kodachadri
 ## Photos
 
 <figure class="image-popup">
-    <a href="/assets/images/image1.jpg"><img src="/assets/images/image3.jpg"></a>
+    <a href="/assets/images/image3.jpg"><img src="/assets/images/image3.jpg"></a>
 </figure>
 
 
