@@ -15,13 +15,13 @@ main:
   - title: "BLOG"
     url: http://blog.pgyogesh.com
   - title: "TAGS"
-    url: /tags/  
+    url: http://blog.pgyogesh.com/tags/  
   - title: "CATEGORIES"
-    url: /categories/
+    url: http://blog.pgyogesh.com/categories/
   - title: "ARCHIVE"
-    url: /year-archive/
+    url: http://blog.pgyogesh.com/year-archive/
   - title: "PHOTOGRAPHY"
-    url: http://pgyogesh.com/photography
+    url: http://photography.pgyogesh.com
   - title: "RESUME"
     url: http://cv.pgyogesh.com
   - title: TRAVEL MAP
