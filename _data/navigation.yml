@@ -13,7 +13,7 @@ main:
   - title: "HOME"
     url: http://pgyogesh.com
   - title: "BLOG"
-    url: /
+    url: http://blog.pgyogesh.com
   - title: "TAGS"
     url: /tags/  
   - title: "CATEGORIES"
@@ -23,6 +23,6 @@ main:
   - title: "PHOTOGRAPHY"
     url: http://pgyogesh.com/photography
   - title: "RESUME"
-    url: http://pgyogesh.com/online-cv
+    url: http://cv.pgyogesh.com
   - title: TRAVEL MAP
     url: /travel
