@@ -1,8 +1,13 @@
 ---
-permalink: /travelplay/
-layout: default
-author_profile: false
+title: "Travel Playlist"
+excerpt: "Explore my travel music"
+layout: categories
+permalink: /Travel-play/
+author_profile: true
+header:
+  overlay_image: https://source.unsplash.com/random/1200x400?travel,music
+  overlay_filter: 0.35
 ---
 
 
-<iframe id='AmazonMusicEmbed9bfb98a8602744a6baecb89b48b1485ai8n0' src='https://music.amazon.in/embed/9bfb98a8602744a6baecb89b48b1485ai8n0/?id=j6aclSdiUm&marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN' width='100%' height='550px' style='border:1px solid rgba(0, 0, 0, 0.12);max-width:'></iframe>
+<iframe src="https://open.spotify.com/embed/user/22uenmyjgsxqzgwsabjbhb5bi/playlist/5PceiatE6gEQCf2ktT6DEJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
