@@ -2,7 +2,7 @@
 title: "Travel Playlist"
 excerpt: "Explore my travel music"
 layout: categories
-permalink: /Travel-play/
+permalink: /Travelplay/
 author_profile: true
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?travel,music
