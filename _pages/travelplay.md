@@ -2,8 +2,8 @@
 title: "Travel Playlist"
 excerpt: "Explore my travel music"
 layout: categories
-permalink: /Travelplay/
-author_profile: true
+permalink: /travelplay/
+author_profile: false
 header:
   overlay_image: https://source.unsplash.com/random/1200x400?travel,music
   overlay_filter: 0.35
