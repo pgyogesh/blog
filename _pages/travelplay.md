@@ -1,7 +1,7 @@
 ---
 title: "Travel Playlist"
 excerpt: "Explore my travel music"
-layout: categories
+layout: splash
 permalink: /travelplay/
 author_profile: false
 header:
