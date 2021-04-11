@@ -13,7 +13,7 @@ main:
   - title: "HOME"
     url: /
   - title: "BLOG"
-    url: /blog
+    url: /blog/
   - title: "TAGS"
     url: /blog/tags/  
   - title: "CATEGORIES"
