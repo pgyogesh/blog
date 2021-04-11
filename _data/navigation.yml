@@ -13,11 +13,11 @@ main:
   - title: "HOME"
     url: https://pgyogesh.github.io
   - title: "BLOG"
-    url: /blog/
+    url: /
   - title: "TAGS"
-    url: tags  
+    url: /tags/
   - title: "CATEGORIES"
-    url: categories
+    url: /categories/
   - title: "ARCHIVE"
     url: /year-archive/
   - title: "PHOTOGRAPHY"
