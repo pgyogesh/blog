@@ -11,15 +11,15 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "HOME"
-    url: http://pgyogesh.com
+    url: /
   - title: "BLOG"
-    url: http://blog.pgyogesh.com
+    url: /blog
   - title: "TAGS"
-    url: http://blog.pgyogesh.com/tags/  
+    url: /blog/tags/  
   - title: "CATEGORIES"
-    url: http://blog.pgyogesh.com/categories/
+    url: /blog/categories/
   - title: "ARCHIVE"
-    url: http://blog.pgyogesh.com/year-archive/
+    url: /blog/year-archive/
   - title: "PHOTOGRAPHY"
     url: http://photography.pgyogesh.com
   - title: "RESUME"
