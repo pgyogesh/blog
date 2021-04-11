@@ -19,7 +19,7 @@ main:
   - title: "CATEGORIES"
     url: /blog/categories/
   - title: "ARCHIVE"
-    url: /blog/year-archive/
+    url: /year-archive/
   - title: "PHOTOGRAPHY"
     url: http://photography.pgyogesh.com
   - title: "RESUME"
