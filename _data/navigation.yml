@@ -11,7 +11,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "HOME"
-    url: /
+    url: https://pgyogesh.github.io
   - title: "BLOG"
     url: /blog/
   - title: "TAGS"
